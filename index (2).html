@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mantenimiento de Equipos de Cómputo - SENA</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-contenido">
+            <div class="preloader-logo">
+                <img src="img/sena.png" alt="Logo SENA">
+            </div>
+            <div class="preloader-spinner"></div>
+            <p class="preloader-texto">Cargando proyecto...</p>
+            <div class="preloader-barra">
+                <div class="preloader-progreso" id="preloader-progreso"></div>
+            </div>
+            <p class="preloader-porcentaje" id="preloader-porcentaje">0%</p>
+        </div>
+    </div>
+
+    <!-- Cursor personalizado -->
+    <div class="cursor-punto" id="cursor-punto"></div>
+    <div class="cursor-anillo" id="cursor-anillo"></div>
+
+    <!-- ENCABEZADO PRINCIPAL -->
+    <header>
+        <nav>
+            <div class="marca">
+                <img src="img/sena.png" alt="Logo SENA">
+                <span>
+                    <strong>Mantenimiento</strong> de Equipos de Cómputo
+                </span>
+            </div>
+            
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#analisis">Análisis</a></li>
+                <li><a href="#planeacion">Planeación</a></li>
+                <li><a href="#ejecucion">Ejecución</a></li>
+                <li><span class="nav-proximamente" aria-disabled="true" title="Disponible próximamente">Evaluación <small>Próximamente</small></span></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Barra de progreso de lectura -->
+    <div class="progreso-lectura" id="barra-progreso"></div>
+
+    <!-- Rueda de navegación (aparece al bajar; resalta la sección actual) -->
+    <nav class="rueda-navegacion" id="rueda-navegacion" aria-label="Navegación por secciones del proyecto">
+        <div class="rueda-contenedor">
+            <div class="rueda-centro" aria-hidden="true">☰</div>
+
+            <a href="#presentacion" class="rueda-punto" data-titulo="Presentación">01</a>
+            <a href="#problema" class="rueda-punto" data-titulo="Problema">02</a>
+            <a href="#objetivos" class="rueda-punto" data-titulo="Objetivos">03</a>
+            <a href="#alcance" class="rueda-punto" data-titulo="Alcance">04</a>
+            <a href="#marco-teorico" class="rueda-punto" data-titulo="Marco Teórico">05</a>
+            <a href="#cronograma" class="rueda-punto" data-titulo="Cronograma">06</a>
+            <a href="#servicio-tecnico" class="rueda-punto" data-titulo="Servicio técnico">07</a>
+            <a href="#cotizaciones" class="rueda-punto" data-titulo="Cotizaciones">08</a>
+            <a href="#registro-mantenimiento" class="rueda-punto" data-titulo="Registro de mantenimiento">09</a>
+        </div>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+
+        <!-- SECCIÓN INICIO -->
+        <section id="inicio">
+            <div class="inicio-contenido">
+                <div class="inicio-texto">
+                    <p class="etiqueta">PROYECTO PRODUCTIVO SENA</p>
+                    <h1>Mantenimiento de equipos de cómputo</h1>
+                    <p class="descripcion">
+                        Proyecto orientado al diagnóstico, mantenimiento preventivo y correctivo
+                        de equipos de cómputo, identificando fallas de hardware y software
+                        para mejorar su funcionamiento, rendimiento y vida útil.
+                    </p>
+                    <a href="#analisis" role="button">
+                        Conocer el proyecto
+                    </a>
+                </div>
+
+                <div class="inicio-visual">
+                    <div class="visual-circulo">
+                        💻
+                    </div>
+                    <h2>Soluciones tecnológicas</h2>
+                    <p>
+                        Diagnóstico · Mantenimiento · Optimización
+                    </p>
+                </div>
+            </div>
+
+            <div class="servicios">
+                <article class="tarjeta-servicio">
+                    <div class="icono-servicio">🔍</div>
+                    <h3>Diagnóstico</h3>
+                    <p>
+                        Identificación de fallas y problemas que afectan
+                        el funcionamiento de los equipos, tanto a nivel
+                        de hardware como de software.
+                    </p>
+                </article>
+
+                <article class="tarjeta-servicio">
+                    <div class="icono-servicio">🛠️</div>
+                    <h3>Mantenimiento</h3>
+                    <p>
+                        Aplicación de procedimientos preventivos y correctivos
+                        para conservar los equipos en óptimas condiciones
+                        y prolongar su vida útil.
+                    </p>
+                </article>
+
+                <article class="tarjeta-servicio">
+                    <div class="icono-servicio">⚡</div>
+                    <h3>Optimización</h3>
+                    <p>
+                        Acciones orientadas a mejorar el rendimiento,
+                        la estabilidad y el funcionamiento general
+                        de los equipos de cómputo.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- SECCIÓN ANÁLISIS -->
+        <section id="analisis">
+            <div class="seccion-encabezado">
+                <h2>Análisis del Proyecto</h2>
+                <p>
+                    En esta sección encontrarás toda la información relacionada con el
+                    planteamiento del proyecto, desde la identificación del problema hasta
+                    los objetivos y el alcance que se pretende lograr.
+                </p>
+            </div>
+
+            <div class="analisis-contenido">
+                <!-- Bloque 1: Presentación -->
+                <article class="bloque-analisis" id="presentacion">
+                    <span class="numero-bloque">01</span>
+                    <div>
+                        <h3>Presentación del Proyecto</h3>
+                        <p>
+                            El proyecto Mantenimiento de Equipos de Cómputo tiene como propósito
+                            realizar procesos de diagnóstico, mantenimiento preventivo y correctivo
+                            en diferentes dispositivos tecnológicos. Durante el desarrollo del proyecto
+                            se revisarán equipos de cómputo y sus componentes, identificando fallas
+                            tanto a nivel de hardware como de software para determinar las causas
+                            y establecer soluciones adecuadas.
+                        </p>
+                        <p>
+                            El proceso incluye la inspección, verificación, mantenimiento y pruebas
+                            de funcionamiento de los equipos, aplicando los conocimientos técnicos
+                            adquiridos durante la formación como aprendices del SENA.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Bloque 2: Problema -->
+                <article class="bloque-analisis" id="problema">
+                    <span class="numero-bloque">02</span>
+                    <div>
+                        <h3>Descripción del Problema</h3>
+                        
+                        <h4>¿Cuál es el problema?</h4>
+                        <p>
+                            Actualmente, diferentes establecimientos y negocios cuentan con equipos
+                            de cómputo que son utilizados diariamente, pero a los cuales no se les
+                            realiza un mantenimiento preventivo o correctivo de manera periódica.
+                        </p>
+                        
+                        <h4>¿A quién afecta?</h4>
+                        <p>
+                            El proyecto estará dirigido principalmente a pequeños y medianos negocios
+                            que utilizan equipos de cómputo para sus actividades diarias.
+                        </p>
+                        
+                        <h4>¿Dónde se presenta?</h4>
+                        <p>
+                            El problema se presenta principalmente en pequeños y medianos negocios,
+                            establecimientos comerciales y oficinas.
+                        </p>
+                        
+                        <h4>¿Cuáles son sus causas?</h4>
+                        <p>
+                            Entre las principales causas se encuentran la falta de mantenimiento periódico,
+                            acumulación de polvo y suciedad, y desactualización del software.
+                        </p>
+                        
+                        <h4>¿Qué consecuencias genera?</h4>
+                        <p>
+                            La falta de mantenimiento puede ocasionar disminución del rendimiento,
+                            sobrecalentamiento, y fallas de hardware.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Bloque 3: Objetivos -->
+                <article class="bloque-analisis" id="objetivos">
+                    <span class="numero-bloque">03</span>
+                    <div>
+                        <h3>Objetivos del Proyecto</h3>
+                        
+                        <h4>¿Qué queremos lograr?</h4>
+                        <p>
+                            Realizar el diagnóstico y mantenimiento preventivo y correctivo de diferentes
+                            equipos de cómputo, identificando las fallas presentes y aplicando las
+                            soluciones técnicas necesarias.
+                        </p>
+                        
+                        <h4>Objetivos específicos</h4>
+                        <ul class="lista-objetivos">
+                            <li>Identificar las condiciones físicas y funcionales de los equipos.</li>
+                            <li>Detectar fallas relacionadas con los componentes de hardware y software.</li>
+                            <li>Aplicar procedimientos adecuados de mantenimiento preventivo.</li>
+                            <li>Realizar mantenimiento correctivo según las necesidades encontradas.</li>
+                            <li>Optimizar el rendimiento y funcionamiento de los dispositivos.</li>
+                            <li>Verificar el correcto funcionamiento de los equipos después de la intervención.</li>
+                            <li>Documentar los procedimientos y soluciones realizadas durante el proyecto.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Bloque 4: Alcance -->
+                <article class="bloque-analisis" id="alcance">
+                    <span class="numero-bloque">04</span>
+                    <div>
+                        <h3>Alcance del Proyecto</h3>
+                        
+                        <h4>Qué desarrollará el proyecto</h4>
+                        <p>
+                            Se desarrollarán procesos de diagnóstico, mantenimiento preventivo y correctivo
+                            de equipos de cómputo, realizando revisión física y funcional.
+                        </p>
+                        
+                        <h4>A quién va dirigido</h4>
+                        <p>
+                            El proyecto está dirigido a pequeños y medianos negocios, establecimientos
+                            comerciales, oficinas y personas que cuenten con equipos de cómputo.
+                        </p>
+                        
+                        <h4>Lugar de aplicación</h4>
+                        <p>
+                            La implementación del proyecto se realizará en una vivienda ubicada en la
+                            Calle 22J # 120A-03, barrio Zelfita (localidad de Fontibón), donde se llevarán a cabo los procesos de revisión,
+                            diagnóstico y mantenimiento de los equipos seleccionados.
+                        </p>
+                        
+                        <!-- Infografía del lugar -->
+                        <div class="lugar-implementacion">
+                            <div class="lugar-info">
+                                <div class="lugar-icono">📍</div>
+                                <div class="lugar-texto">
+                                    <h4>Ubicación del proyecto</h4>
+                                    <p>
+                                        Calle 22J # 120A-03<br>
+                                        Barrio Zelfita, Fontibón<br>
+                                        Bogotá D.C., Colombia
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <!-- Imagen de la infografía -->
+                            <div class="lugar-imagen">
+                                <img src="img/infografia-ubicacion.png" alt="Infografía de la ubicación del proyecto" onerror="this.parentElement.style.display='none'">
+                            </div>
+                            
+                            <!-- Botón para Google Maps -->
+                            <a href="https://www.google.com/maps/search/?api=1&amp;query=Calle+22J+%23120A-03%2C+Zelfita%2C+Fontib%C3%B3n%2C+Bogot%C3%A1" 
+                               class="btn-maps" 
+                               target="_blank" rel="noopener">
+                                <span class="btn-maps-icono">🗺️</span>
+                                Ver en Google Maps
+                            </a>
+                        </div>
+                        
+                        <h4>Resultado esperado</h4>
+                        <p>
+                            Lograr que los equipos intervenidos presenten mejor funcionamiento, rendimiento
+                            y estabilidad, mediante la identificación y solución de las fallas encontradas.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Bloque 5: Marco Teórico -->
+                <article class="bloque-analisis" id="marco-teorico">
+                    <span class="numero-bloque">05</span>
+                    <div>
+                        <h3>Marco Teórico</h3>
+                        <p>
+                            El mantenimiento de equipos de cómputo comprende un conjunto de procedimientos
+                            destinados a conservar, recuperar y mejorar el funcionamiento de los sistemas informáticos.
+                        </p>
+                        <p>
+                            El mantenimiento preventivo busca reducir la posibilidad de fallas mediante
+                            acciones periódicas como limpieza, inspección y revisión de componentes.
+                            Por otra parte, el mantenimiento correctivo se realiza cuando el equipo
+                            presenta una falla que requiere ser identificada y solucionada.
+                        </p>
+                        <p>
+                            El diagnóstico permite identificar el estado actual de los equipos,
+                            detectar problemas de hardware y software, y establecer las soluciones
+                            más adecuadas para cada caso.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- SECCIÓN PLANEACIÓN -->
+        <section id="planeacion">
+            <div class="seccion-encabezado">
+                <h2>Planeación del Proyecto</h2>
+                <p>
+                    Aquí se organiza cómo se desarrollará el proyecto: quién hace cada actividad y cuándo,
+                    el formato de servicio técnico del equipo que se va a atender y los recursos
+                    necesarios para realizar los mantenimientos.
+                </p>
+            </div>
+
+            <div class="planeacion-contenido">
+
+                <!-- Bloque 6: Cronograma -->
+                <article class="bloque-analisis bloque-plan" id="cronograma">
+                    <span class="numero-bloque">06</span>
+                    <div>
+                        <h3>Cronograma de Actividades</h3>
+                        <p>
+                            Las actividades de las fases de Análisis y Planeación se repartieron en partes iguales
+                            entre los tres integrantes del equipo (cuatro tareas por persona) y se desarrollaron
+                            entre el 1 de julio y el 21 de octubre de 2026.
+                        </p>
+
+                        <div class="crono">
+                            <div class="crono-cabecera">
+                                <span>Actividad y responsable</span>
+                                <div class="crono-meses" aria-hidden="true">
+                                    <span style="--pos:0%">Jul</span>
+                                    <span style="--pos:27.43%">Ago</span>
+                                    <span style="--pos:54.87%">Sep</span>
+                                    <span style="--pos:81.42%">Oct</span>
+                                </div>
+                                <span class="crono-th-fechas">Fechas</span>
+                            </div>
+                            <h5 class="crono-fase-titulo">Fase de Análisis</h5>
+                            <div class="reveal reveal-izquierda reveal-medio reveal-retraso-1">
+                                <div class="crono-fila">
+                                    <div class="crono-info">
+                                        <strong>Resumen del proyecto en español e inglés (con audio en inglés)</strong>
+                                        <span class="crono-resp">👤 Andrés Felipe Mejía Castro</span>
+                                    </div>
+                                    <div class="crono-pista" role="img" aria-label="Del 27 jul al 14 ago"><span class="crono-barra" style="--inicio:23.01%; --ancho:16.81%;"></span></div>
+                                    <div class="crono-fechas"><b>27 jul – 14 ago</b><span class="insignia-ok">✓ Realizada</span></div>
+                                </div>
+                            </div>
+                            <div class="reveal reveal-izquierda reveal-medio reveal-retraso-2">
+                                <div class="crono-fila">
+                                    <div class="crono-info">
+                                        <strong>Descripción del problema</strong>
+                                        <span class="crono-resp">👤 Jimer Andrey Ariza Gómez</span>
+                                    </div>
+                                    <div class="crono-pista" role="img" aria-label="Del 1 jul al 8 jul"><span class="crono-barra" style="--inicio:0.00%; --ancho:7.08%;"></span></div>
+                                    <div class="crono-fechas"><b>1 jul – 8 jul</b><span class="insignia-ok">✓ Realizada</span></div>
+                                </div>
+                            </div>
+                            <div class="reveal reveal-izquierda reveal-medio reveal-retraso-3">
+                                <div class="crono-fila">
+                                    <div class="crono-info">
+                                        <strong>Objetivo del proyecto</strong>
+                                        <span class="crono-resp">👤 Melissa Monsalve Peña</span>
+                                    </div>
+                                    <div class="crono-pista" role="img" aria-label="Del 6 jul al 14 jul"><span class="crono-barra" style="--inicio:4.42%; --ancho:7.96%;"></span></div>
+                                    <div class="crono-fechas"><b>6 jul – 14 jul</b><span class="insignia-ok">✓ Realizada</span></div>
+                                </div>
+                            </div>
+                            <div class="reveal reveal-izquierda reveal-medio reveal-retraso-4">
+                                <div class="crono-fila">
+                                    <div class="crono-info">
+                                        <strong>Alcance del proyecto</strong>
+                                        <span class="crono-resp">👤 Andrés Felipe Mejía Castro</span>
+                                    </div>
+                                    <div class="crono-pista" role="img" aria-label="Del 10 jul al 17 jul"><span class="crono-barra" style="--inicio:7.96%; --ancho:7.08%;"></span></div>
+                                    <div class="crono-fechas"><b>10 jul – 17 jul</b><span class="insignia-ok">✓ Realizada</span></div>
+                                </div>
+                            </div>
+                            <div class="reveal reveal-izquierda reveal-medio reveal-retraso-1">
+                                <div class="crono-fila">
+                                    <div class="crono-info">
+                                        <strong>Lugar de implementación: evidencias fotográficas</strong>
+                                        <span class="crono-resp">👤 Jimer Andrey Ariza Gómez</span>
+                                    </div>
+                                    <div class="crono-pista" role="img" aria-label="Del 13 jul al 24 jul"><span class="crono-barra" style="--inicio:10.62%; --ancho:10.62%;"></span></div>
+                                    <div class="crono-fechas"><b>13 jul – 24 jul</b><span class="insignia-ok">✓ Realizada</span></div>
+                                </div>
+                            </div>
+                            <div class="reveal reveal-izquierda reveal-medio reveal-retraso-2">
+                                <div class="crono-fila">
+                                    <div class="crono-info">
+                                        <strong>Infografía (marco teórico)</strong>
+                                        <span class="crono-resp">👤 Melissa Monsalve Peña</span>
+                                    </div>
+                                    <div class="crono-pista" role="img" aria-label="Del 20 jul al 7 ago"><span class="crono-barra" style="--inicio:16.81%; --ancho:16.81%;"></span></div>
+                                    <div class="crono-fechas"><b>20 jul – 7 ago</b><span class="insignia-ok">✓ Realizada</span></div>
+                                </div>
+                            </div>
+                            <div class="reveal reveal-izquierda reveal-medio reveal-retraso-3">
+                                <div class="crono-fila">
+                                    <div class="crono-info">
+                                        <strong>Formato de acuerdo y consentimiento</strong>
+                                        <span class="crono-resp">👤 Jimer Andrey Ariza Gómez</span>
+                                    </div>
+                                    <div class="crono-pista" role="img" aria-label="Del 3 ago al 12 ago"><span class="crono-barra" style="--inicio:29.20%; --ancho:8.85%;"></span></div>
+                                    <div class="crono-fechas"><b>3 ago – 12 ago</b><span class="insignia-ok">✓ Realizada</span></div>
+                                </div>
+                            </div>
+                            <h5 class="crono-fase-titulo">Fase de Planeación</h5>
+                            <div class="reveal reveal-izquierda reveal-medio reveal-retraso-4">
+                                <div class="crono-fila">
+                                    <div class="crono-info">
+                                        <strong>Tabla de cotizaciones (usar formato anexo)</strong>
+                                        <span class="crono-resp">👤 Andrés Felipe Mejía Castro</span>
+                                    </div>
+                                    <div class="crono-pista" role="img" aria-label="Del 17 ago al 28 ago"><span class="crono-barra" style="--inicio:41.59%; --ancho:10.62%;"></span></div>
+                                    <div class="crono-fechas"><b>17 ago – 28 ago</b><span class="insignia-ok">✓ Realizada</span></div>
+                                </div>
+                            </div>
+                            <div class="reveal reveal-izquierda reveal-medio reveal-retraso-1">
+                                <div class="crono-fila">
+                                    <div class="crono-info">
+                                        <strong>Cronograma de actividades (usar formato anexo)</strong>
+                                        <span class="crono-resp">👤 Melissa Monsalve Peña</span>
+                                    </div>
+                                    <div class="crono-pista" role="img" aria-label="Del 24 ago al 4 sep"><span class="crono-barra" style="--inicio:47.79%; --ancho:10.62%;"></span></div>
+                                    <div class="crono-fechas"><b>24 ago – 4 sep</b><span class="insignia-ok">✓ Realizada</span></div>
+                                </div>
+                            </div>
+                            <div class="reveal reveal-izquierda reveal-medio reveal-retraso-2">
+                                <div class="crono-fila">
+                                    <div class="crono-info">
+                                        <strong>Formato de servicio técnico (3 primeras secciones): equipo cliente</strong>
+                                        <span class="crono-resp">👤 Jimer Andrey Ariza Gómez</span>
+                                    </div>
+                                    <div class="crono-pista" role="img" aria-label="Del 7 sep al 25 sep"><span class="crono-barra" style="--inicio:60.18%; --ancho:16.81%;"></span></div>
+                                    <div class="crono-fechas"><b>7 sep – 25 sep</b><span class="insignia-ok">✓ Realizada</span></div>
+                                </div>
+                            </div>
+                            <div class="reveal reveal-izquierda reveal-medio reveal-retraso-3">
+                                <div class="crono-fila">
+                                    <div class="crono-info">
+                                        <strong>Formato de servicio técnico (3 primeras secciones): equipo servidor</strong>
+                                        <span class="crono-resp">👤 Melissa Monsalve Peña</span>
+                                    </div>
+                                    <div class="crono-pista" role="img" aria-label="Del 14 sep al 2 oct"><span class="crono-barra" style="--inicio:66.37%; --ancho:16.81%;"></span></div>
+                                    <div class="crono-fechas"><b>14 sep – 2 oct</b><span class="insignia-ok">✓ Realizada</span></div>
+                                </div>
+                            </div>
+                            <div class="reveal reveal-izquierda reveal-medio reveal-retraso-4">
+                                <div class="crono-fila">
+                                    <div class="crono-info">
+                                        <strong>Cargar evidencias en el Site</strong>
+                                        <span class="crono-resp">👤 Andrés Felipe Mejía Castro</span>
+                                    </div>
+                                    <div class="crono-pista" role="img" aria-label="Del 5 oct al 21 oct"><span class="crono-barra" style="--inicio:84.96%; --ancho:15.04%;"></span></div>
+                                    <div class="crono-fechas"><b>5 oct – 21 oct</b><span class="insignia-ok">✓ Realizada</span></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <p class="nota-fase">
+                            La fase de <strong>Evaluación</strong> estará disponible próximamente.
+                        </p>
+
+                        <a href="docs/Cronograma_2026.xlsx" class="btn-descarga" download>
+                            <span class="btn-maps-icono">📅</span> Descargar cronograma (Excel)
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Bloque 7: Formato de servicio técnico -->
+                <article class="bloque-analisis bloque-plan" id="servicio-tecnico">
+                    <span class="numero-bloque">07</span>
+                    <div>
+                        <h3>Formato de Servicio Técnico</h3>
+                        <p>
+                            Hoja de vida y servicio técnico del primer equipo recibido. En ella se registran los datos
+                            del cliente, las características del hardware y software, y la novedad reportada.
+                        </p>
+
+                        <div class="ficha">
+                            <figure class="ficha-foto reveal reveal-zoom reveal-medio">
+                                <img src="img/foto-equipo.jpg" alt="Portátil Acer Aspire A315-51 recibido para servicio técnico" loading="lazy">
+                                <figcaption>Acer Aspire A315-51</figcaption>
+                            </figure>
+
+                            <div class="ficha-datos">
+                                <div class="ficha-grupo reveal reveal-derecha reveal-medio reveal-retraso-1">
+                                    <h5>👤 Cliente y servicio</h5>
+                                    <dl>
+                                        <div><dt>Cliente</dt><dd>David Duarte Gomez</dd></div>
+                                        <div><dt>Ciudad</dt><dd>Bogotá D.C. (Fontibón)</dd></div>
+                                        <div><dt>Recepción</dt><dd>21 de octubre de 2026</dd></div>
+                                        <div><dt>Entrega</dt><dd>Pendiente</dd></div>
+                                        <div><dt>Tipo de servicio</dt><dd>Correctivo</dd></div>
+                                    </dl>
+                                </div>
+
+                                <div class="ficha-grupo reveal reveal-derecha reveal-medio reveal-retraso-2">
+                                    <h5>💻 Equipo</h5>
+                                    <dl>
+                                        <div><dt>Tipo</dt><dd>Portátil</dd></div>
+                                        <div><dt>Marca y modelo</dt><dd>Acer Aspire A315-51</dd></div>
+                                        <div><dt>Procesador</dt><dd>Intel Core i3-8130U, 2 núcleos, 2.20 GHz</dd></div>
+                                        <div><dt>Memoria RAM</dt><dd>4 GB DDR4 (2400 MHz)</dd></div>
+                                        <div><dt>Almacenamiento</dt><dd>SSD ADATA 256 GB + HDD Seagate 1 TB</dd></div>
+                                    </dl>
+                                </div>
+
+                                <div class="ficha-grupo reveal reveal-derecha reveal-medio reveal-retraso-3">
+                                    <h5>🧩 Software</h5>
+                                    <dl>
+                                        <div><dt>Sistema operativo</dt><dd>Windows 11 Pro</dd></div>
+                                        <div><dt>Office</dt><dd>No instalado</dd></div>
+                                        <div><dt>Antivirus</dt><dd>Windows Defender</dd></div>
+                                        <div><dt>Otros programas</dt><dd>Chrome, Edge, WPS Office, WinRAR, Zoom, WhatsApp</dd></div>
+                                    </dl>
+                                </div>
+
+                                <div class="ficha-grupo ficha-motivo reveal reveal-derecha reveal-medio reveal-retraso-4">
+                                    <h5>🛠️ Motivo y diagnóstico</h5>
+                                    <p>
+                                        El equipo no tiene Microsoft Office instalado, por lo que se realizará su instalación.
+                                        Diagnóstico inicial: el equipo funciona con normalidad, cuenta con 43 GB libres en el disco C:
+                                        y el antivirus está activo y sin amenazas detectadas.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="docs/Formato_de_servicio_tecnico_2026.xlsx" class="btn-descarga" download>
+                            <span class="btn-maps-icono">📋</span> Descargar formato de servicio técnico (Excel)
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Bloque 8: Cotizaciones -->
+                <article class="bloque-analisis bloque-plan" id="cotizaciones">
+                    <span class="numero-bloque">08</span>
+                    <div>
+                        <h3>Tabla de Cotizaciones</h3>
+                        <p>
+                            Materiales, herramientas e insumos necesarios para realizar mantenimiento preventivo
+                            y correctivo con un equipo de tres técnicos.
+                        </p>
+                        <p class="cotiza-fuente">Fuente de financiamiento: <strong>Recursos propios (aprendices)</strong></p>
+
+                        <div class="cotiza-resumen">
+                            <div class="cotiza-tarjeta reveal reveal-abajo reveal-medio reveal-retraso-1">
+                                <small>Materiales</small>
+                                <strong>$ 369.000</strong>
+                                <span>11 insumos</span>
+                            </div>
+                            <div class="cotiza-tarjeta reveal reveal-abajo reveal-medio reveal-retraso-2">
+                                <small>Equipos y herramientas</small>
+                                <strong>$ 435.000</strong>
+                                <span>10 elementos</span>
+                            </div>
+                            <div class="cotiza-tarjeta cotiza-total reveal reveal-abajo reveal-medio reveal-retraso-3">
+                                <small>Presupuesto total</small>
+                                <strong>$ 804.000</strong>
+                                <span>Pesos colombianos (COP)</span>
+                            </div>
+                        </div>
+
+                        <div class="reveal reveal-abajo reveal-medio">
+                        <div class="tabla-scroll">
+                            <table class="tabla-cotizacion">
+                                <caption>Materiales</caption>
+                                <thead><tr><th>Descripción técnica</th><th class="cant">Cant.</th><th class="num">Valor unitario</th><th class="num">Valor parcial</th></tr></thead>
+                                <tbody>
+                                <tr><td>Alcohol isopropílico al 99%, frasco de 500 ml, para limpieza de tarjetas, contactos y componentes</td><td class="cant">2</td><td class="num">$ 28.000</td><td class="num">$ 56.000</td></tr>
+                                <tr><td>Limpiador de contactos eléctricos y electrónicos en spray, 220 ml</td><td class="cant">2</td><td class="num">$ 22.000</td><td class="num">$ 44.000</td></tr>
+                                <tr><td>Pasta térmica de alta conductividad, jeringa de 4 g, para CPU y GPU</td><td class="cant">3</td><td class="num">$ 18.000</td><td class="num">$ 54.000</td></tr>
+                                <tr><td>Aire comprimido en lata de 400 ml, para retirar polvo de ventiladores, disipadores y ranuras</td><td class="cant">3</td><td class="num">$ 25.000</td><td class="num">$ 75.000</td></tr>
+                                <tr><td>Paño de microfibra antiestático, paquete x6</td><td class="cant">2</td><td class="num">$ 15.000</td><td class="num">$ 30.000</td></tr>
+                                <tr><td>Bastoncillos (hisopos) de algodón, caja x100</td><td class="cant">2</td><td class="num">$ 4.000</td><td class="num">$ 8.000</td></tr>
+                                <tr><td>Bridas plásticas de 20 cm, paquete x100, para organizar cableado interno</td><td class="cant">1</td><td class="num">$ 8.000</td><td class="num">$ 8.000</td></tr>
+                                <tr><td>Guantes de nitrilo desechables, caja x100</td><td class="cant">1</td><td class="num">$ 32.000</td><td class="num">$ 32.000</td></tr>
+                                <tr><td>Bolsas antiestáticas para almacenar tarjetas y componentes, paquete x10</td><td class="cant">2</td><td class="num">$ 12.000</td><td class="num">$ 24.000</td></tr>
+                                <tr><td>Limpiador de pantallas en spray, 120 ml, con paño</td><td class="cant">2</td><td class="num">$ 14.000</td><td class="num">$ 28.000</td></tr>
+                                <tr><td>Etiquetas adhesivas para rotulado de equipos y cables, paquete</td><td class="cant">1</td><td class="num">$ 10.000</td><td class="num">$ 10.000</td></tr>
+                                </tbody>
+                                <tfoot><tr><td colspan="3">Total materiales</td><td class="num">$ 369.000</td></tr></tfoot>
+                            </table>
+                        </div>
+                        </div>
+                        <div class="reveal reveal-abajo reveal-medio">
+                        <div class="tabla-scroll">
+                            <table class="tabla-cotizacion">
+                                <caption>Equipos, dispositivos y herramientas</caption>
+                                <thead><tr><th>Descripción técnica</th><th class="cant">Cant.</th><th class="num">Valor unitario</th><th class="num">Valor parcial</th></tr></thead>
+                                <tbody>
+                                <tr><td>Kit de destornilladores de precisión 25 en 1 (Phillips, Torx, hexagonal, pentalobe), para equipos de escritorio y portátiles</td><td class="cant">3</td><td class="num">$ 35.000</td><td class="num">$ 105.000</td></tr>
+                                <tr><td>Pulsera antiestática con cable a tierra y clip caimán</td><td class="cant">3</td><td class="num">$ 9.000</td><td class="num">$ 27.000</td></tr>
+                                <tr><td>Multímetro digital (voltaje AC/DC, resistencia y continuidad)</td><td class="cant">1</td><td class="num">$ 45.000</td><td class="num">$ 45.000</td></tr>
+                                <tr><td>Probador de fuente de poder ATX de 20/24 pines</td><td class="cant">1</td><td class="num">$ 35.000</td><td class="num">$ 35.000</td></tr>
+                                <tr><td>Juego de pinzas antiestáticas de acero inoxidable (x3)</td><td class="cant">1</td><td class="num">$ 18.000</td><td class="num">$ 18.000</td></tr>
+                                <tr><td>Kit de palancas y espátulas plásticas para apertura de portátiles</td><td class="cant">2</td><td class="num">$ 12.000</td><td class="num">$ 24.000</td></tr>
+                                <tr><td>Brocha antiestática de cerdas suaves, para limpieza de tarjetas y disipadores</td><td class="cant">3</td><td class="num">$ 7.000</td><td class="num">$ 21.000</td></tr>
+                                <tr><td>Probador de cable de red RJ45/RJ11</td><td class="cant">1</td><td class="num">$ 30.000</td><td class="num">$ 30.000</td></tr>
+                                <tr><td>Memoria USB de 32 GB, para booteo e instalación de sistemas operativos</td><td class="cant">3</td><td class="num">$ 25.000</td><td class="num">$ 75.000</td></tr>
+                                <tr><td>Tapete antiestático de trabajo (60 x 40 cm) con cable a tierra</td><td class="cant">1</td><td class="num">$ 55.000</td><td class="num">$ 55.000</td></tr>
+                                </tbody>
+                                <tfoot><tr><td colspan="3">Total equipos, dispositivos y herramientas</td><td class="num">$ 435.000</td></tr></tfoot>
+                            </table>
+                        </div>
+                        </div>
+
+                        <a href="docs/Tabla_de_Cotizaciones_2026.xlsx" class="btn-descarga" download>
+                            <span class="btn-maps-icono">💰</span> Descargar tabla de cotizaciones (Excel)
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- SECCIÓN EJECUCIÓN -->
+        <section id="ejecucion">
+            <div class="seccion-encabezado">
+                <h2>Ejecución del Proyecto</h2>
+                <p>
+                    Aquí se documenta el trabajo realizado sobre el equipo recibido: las acciones del
+                    mantenimiento y las recomendaciones para el cliente, tal como quedaron registradas
+                    en el formato de servicio técnico.
+                </p>
+            </div>
+
+            <div class="planeacion-contenido">
+
+                <!-- Bloque 9: Registro de mantenimiento -->
+                <article class="bloque-analisis bloque-plan" id="registro-mantenimiento">
+                    <span class="numero-bloque">09</span>
+                    <div>
+                        <h3>Registro de Mantenimiento</h3>
+                        <p>
+                            Hoja &ldquo;Registro de mantenimiento&rdquo; del formato de servicio técnico del portátil
+                            Acer Aspire A315-51 de David Duarte Gomez.
+                        </p>
+
+                        <div class="ficha-datos registro-datos">
+                            <div class="ficha-grupo reveal reveal-abajo reveal-medio reveal-retraso-1">
+                                <h5>📥 Novedad reportada por el cliente</h5>
+                                <p>El equipo no tiene Microsoft Office; se instalará.</p>
+                            </div>
+
+                            <div class="ficha-grupo reveal reveal-abajo reveal-medio reveal-retraso-2">
+                                <h5>🔎 Diagnóstico técnico</h5>
+                                <p>
+                                    Equipo en buen estado general, con Windows 11 Pro, 43 GB libres en el disco C:
+                                    y Windows Defender activo y sin amenazas detectadas.
+                                </p>
+                            </div>
+
+                            <div class="ficha-grupo ficha-ancho reveal reveal-abajo reveal-medio reveal-retraso-3">
+                                <h5>📅 Fecha y técnicos</h5>
+                                <dl>
+                                    <div><dt>Fecha del mantenimiento</dt><dd>27 de octubre de 2026</dd></div>
+                                    <div><dt>Técnicos encargados</dt><dd>Andrés Felipe Mejía Castro, Melissa Monsalve Peña y Jimer Andrey Ariza Gómez</dd></div>
+                                </dl>
+                            </div>
+
+                            <div class="ficha-grupo ficha-ancho reveal reveal-abajo reveal-medio reveal-retraso-4">
+                                <h5>🛠️ Acciones realizadas</h5>
+                                <ul class="lista-objetivos">
+                                    <li>Recepción del equipo y revisión de su estado físico y de arranque.</li>
+                                    <li>Diagnóstico: Windows 11 Pro, Windows Defender sin amenazas y 43 GB libres en C:.</li>
+                                    <li>Instalación de Microsoft Office, que no estaba instalado en el equipo.</li>
+                                    <li>Verificación del funcionamiento de Word, Excel y PowerPoint tras la instalación.</li>
+                                    <li>Pruebas finales de funcionamiento del equipo.</li>
+                                </ul>
+                            </div>
+
+                            <div class="ficha-grupo ficha-ancho reveal reveal-abajo reveal-medio reveal-retraso-4">
+                                <h5>💡 Recomendaciones para el cliente</h5>
+                                <ul class="lista-objetivos">
+                                    <li>Mantener Windows y Windows Defender actualizados y evitar programas de fuentes desconocidas.</li>
+                                    <li>Hacer limpieza interna cada 6 meses; con 4 GB de RAM, ampliar a 8 GB mejoraría el rendimiento.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <a href="docs/Formato_de_servicio_tecnico_2026.xlsx" class="btn-descarga" download>
+                            <span class="btn-maps-icono">📋</span> Descargar registro de mantenimiento (Excel)
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- EVALUACIÓN: PRÓXIMAMENTE -->
+        <section id="proximamente">
+            <div class="seccion-encabezado">
+                <h2>Próximamente</h2>
+                <p>Esta fase aún no se ha desarrollado. Cuando esté lista, aparecerá en esta página.</p>
+            </div>
+            <div class="servicios servicios-uno">
+                <article class="tarjeta-servicio reveal reveal-abajo reveal-medio">
+                    <div class="icono-servicio">✅</div>
+                    <h3>Evaluación <span class="insignia-pronto">Próximamente</span></h3>
+                    <p>Aquí se publicará la carta de satisfacción del servicio y las recomendaciones para el cliente.</p>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>Proyecto productivo SENA - Mantenimiento de equipos de cómputo</p>
+        <p>&copy; 2026 - Grupo 1</p>
+        <p>Hecho por: <strong>JIMER ANDREY ARIZA GÓMEZ</strong>, <strong>MELISSA MONSALVE PEÑA</strong> y <strong>ANDRÉS FELIPE MEJÍA CASTRO</strong></p>
+    </footer>
+
+    <!-- Botón para volver arriba -->
+    <button id="btn-arriba" class="btn-arriba" title="Volver arriba">
+        ↑
+    </button>
+    
+    <!-- Script para animaciones -->
+    <script src="js/script.js"></script>
+</body>
+</html>
